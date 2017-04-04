@@ -57,13 +57,13 @@ Power.addEventListener('click',PowerON);
 
 
 function PicOFF (){
-	Pic='No';
+	Pict='No';
 	Picture.style.background='#e44849';
 	Picture.removeEventListener('click',PicOFF);
 	Picture.addEventListener('click',PicON);
 };
 function PicON (){
-	Pic='Yes';
+	Pict='Yes';
 	Picture.style.background='#88ae60';
 	Picture.removeEventListener('click',PicON);
 	Picture.addEventListener('click',PicOFF);
