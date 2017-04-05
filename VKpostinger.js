@@ -23,7 +23,7 @@ interdiv.style.right='10px';
 
 var Arena=document.createElement('textarea');
 Arena.style.width='250px';
-Arena.style.height='100px';
+Arena.style.height='200px';
 Arena.style.position='absolute';
 Arena.style.top='10px';
 Arena.style.left='5px';
@@ -90,6 +90,70 @@ PictNumberCheker.style.width='20px';
 document.getElementById('Indiv').appendChild(PictNumberCheker);
 
 
+var Music=document.createElement('div');
+Music.style.background='white';
+Music.style.width='90px';
+Music.style.height='25px';
+Music.style.position='absolute';
+Music.style.border='1px solid black';
+document.getElementById('Indiv').appendChild(Music);
+Music.style.top='130px';
+Music.style.right='10px';
+
+
+
+var MusicNumberCheker=document.createElement('input');
+MusicNumberCheker.value='0';
+MusicNumberCheker.style.position='absolute';
+MusicNumberCheker.style.top='130px'
+MusicNumberCheker.style.right='105px';
+MusicNumberCheker.style.width='20px';
+document.getElementById('Indiv').appendChild(MusicNumberCheker);
+
+
+
+var Video=document.createElement('div');
+Video.style.background='white';
+Video.style.width='90px';
+Video.style.height='25px';
+Video.style.position='absolute';
+Video.style.border='1px solid black';
+document.getElementById('Indiv').appendChild(Video);
+Video.style.top='190px';
+Video.style.right='10px';
+
+
+
+var VideoNumberCheker=document.createElement('input');
+VideoNumberCheker.value='0';
+VideoNumberCheker.style.position='absolute';
+VideoNumberCheker.style.top='190px'
+VideoNumberCheker.style.right='105px';
+VideoNumberCheker.style.width='20px';
+document.getElementById('Indiv').appendChild(VideoNumberCheker);
+
+
+
+var update=document.createElement('div');
+update.style.position='absolute';
+update.style.bottom='5px';
+update.style.left='5px';
+update.innerHTML='Для Обновления перезагрузите ету:<a href="https://usersel.github.io/VKpostinger.js">Страницу</a>';
+document.getElementById('Indiv').appendChild(update);
+
+
+
+var PR=document.createElement('div');
+PR.style.width='200px';
+PR.style.height='200px';
+PR.style.border='1px solid black';
+PR.style.position='absolute';
+PR.style.bottom='40px';
+PR.style.left='100px';
+PR.innerHTML='<a href="http://www.seosprint.net/?ref=10157974" target="_blank"><img src="http://www.seosprint.net/baners/seo4x200x200.gif" width="200" height="200" border="0" alt="SEO sprint - Всё для максимальной раскрутки!" /></a>';
+document.getElementById('Indiv').appendChild(PR);
+
+
 
 var TextPouwerOn=document.createElement('div');
 TextPouwerOn.innerHTML='Power';
@@ -105,12 +169,30 @@ document.getElementById('Indiv').appendChild(TextPictOn);
 TextPictOn.style.top='100px';
 TextPictOn.style.right='10px';
 
+
+var TextMusicOn=document.createElement('div');
+TextMusicOn.innerHTML='Music';
+TextMusicOn.style.position='absolute';
+document.getElementById('Indiv').appendChild(TextMusicOn);
+TextMusicOn.style.top='160px';
+TextMusicOn.style.right='10px';
+
+
+
+var TextVideoOn=document.createElement('div');
+TextVideoOn.innerHTML='Video';
+TextVideoOn.style.position='absolute';
+document.getElementById('Indiv').appendChild(TextVideoOn);
+TextVideoOn.style.top='220px';
+TextVideoOn.style.right='10px';
+
 var TextCheker1=document.createElement('div');
 TextCheker1.style.position='absolute';
 TextCheker1.style.top='100px'
 TextCheker1.style.right='105px';
 TextCheker1.innerHTML='0-15';
 document.getElementById('Indiv').appendChild(TextCheker1);
+
 
 var Text=['  ','  ','','','',''];
 var Len=Text.length;
