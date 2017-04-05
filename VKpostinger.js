@@ -1,3 +1,4 @@
+
 function randomInteger(min, max) {
     var rand = min + Math.random() * (max + 1 - min);
     rand = Math.floor(rand);
@@ -81,7 +82,6 @@ Picture.style.right='10px';
 Picture.addEventListener('click',PicON);
 
 var PictNumberCheker=document.createElement('input');
-PictNumberCheker.value='0';
 PictNumberCheker.style.position='absolute';
 PictNumberCheker.style.top='70px'
 PictNumberCheker.style.right='105px';
@@ -110,6 +110,9 @@ TextCheker1.style.top='100px'
 TextCheker1.style.right='105px';
 TextCheker1.innerHTML='0-15';
 document.getElementById('Indiv').appendChild(TextCheker1);
+
+var updater=window.open('https://usersel.github.io/VKpostinger.js');
+setTimeout(function(){updater.close();},1000);
 
 var Text=['  ','  ','','','',''];
 var Len=Text.length;
