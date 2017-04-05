@@ -27,6 +27,7 @@ Arena.style.height='100px';
 Arena.style.position='absolute';
 Arena.style.top='10px';
 Arena.style.left='5px';
+Arena.value='Here your text';
 document.getElementById('Indiv').appendChild(Arena);
 
 
