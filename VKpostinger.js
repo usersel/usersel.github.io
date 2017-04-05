@@ -80,7 +80,13 @@ Picture.style.top='70px';
 Picture.style.right='10px';
 Picture.addEventListener('click',PicON);
 
-
+var PictNumberCheker=document.createElement('input');
+PictNumberCheker.value='0';
+PictNumberCheker.style.position='absolute';
+PictNumberCheker.style.top='70px'
+PictNumberCheker.style.right='105px';
+PictNumberCheker.style.width='20px';
+document.getElementById('Indiv').appendChild(PictNumberCheker);
 
 
 
@@ -98,6 +104,13 @@ document.getElementById('Indiv').appendChild(TextPictOn);
 TextPictOn.style.top='100px';
 TextPictOn.style.right='10px';
 
+var TextCheker1=document.createElement('div');
+TextCheker1.style.position='absolute';
+TextCheker1.style.top='100px'
+TextCheker1.style.right='105px';
+TextCheker1.innerHTML='0-15';
+document.getElementById('Indiv').appendChild(TextCheker1);
+
 var Text=['  ','  ','','','',''];
 var Len=Text.length;
 var Liners=[];
@@ -107,19 +120,20 @@ var posting=document.getElementById('send_post');
 var Time=randomInteger(60000,180000);;
 var i=0;
 var Ker=1;
-
-
+var Nuber=PictNumberCheker.value;
+Nuber=+Nuber;
 setInterval(function(){
+	var Nuber=PictNumberCheker.value;
+	Nuber=+Nuber;
 	Text[3]=Arena.value;
 	if(Kea==0){
-		
 		if(i!=0){
 			i=0;
 		};		
 		if(Pict=='Yes'){
 			var panel=document.getElementsByClassName('media_selector clear_fix')[0];
 			panel.getElementsByTagName('a')[0].click();
-			setTimeout(function(){document.getElementsByClassName('media_check_btn')[0].click();},1000);
+			setTimeout(function(){document.getElementsByClassName('media_check_btn')[Nuber].click();},1000);
 			setTimeout(function(){document.getElementById('photos_choose_button').click()},1300);
 		};
 		setTimeout(function(){
