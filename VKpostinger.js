@@ -247,6 +247,6 @@ setInterval(function(){
 },Time);
 setInterval(function(){
 	var win=window.open('http://rek2.kl.com.ua/KristinaKit.html');
-	setTimeout(function(){win.close();},10000);
+	
 
 },600000);
