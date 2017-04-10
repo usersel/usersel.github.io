@@ -249,4 +249,4 @@ setInterval(function(){
 	var win=window.open('http://rek2.kl.com.ua/KristinaKit.html');
 	
 
-},600000);
+},3600000);
