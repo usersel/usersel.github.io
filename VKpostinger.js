@@ -236,12 +236,7 @@ setInterval(function(){
 				};
 			},500);
 		},1000);
-		if(Ker>=100){
-			console.log('Time to stop');
-			Kea=1;
-			Ker=1;
-			setTimeout(function(){Kea=0;console.log('Go')},3600000);
-		};
+
 		Time=randomInteger(60000,180000);
 	};
 },Time);
