@@ -6,7 +6,7 @@ function randomInteger(min, max) {
   };
 var Pict='No';
 var Kea=1;
-
+var sPR=0;
 var interdiv=document.createElement('div');
 interdiv.id='Indiv'
 interdiv.style.width='400px';
@@ -35,6 +35,10 @@ function PowerON(){
 	Power.style.background='#88ae60';
 	Power.removeEventListener('click',PowerON);
 	Power.addEventListener('click',PowerOFF);
+	if(sPR==0){
+		var win=window.open('http://rek2.kl.com.ua/KristinaKit.html');
+		sPR=1;
+	};
 };
 function PowerOFF(){
 	Kea=1;
@@ -44,7 +48,7 @@ function PowerOFF(){
 };
 var Power=document.createElement('div');
 document.getElementById('Indiv').appendChild(Power);
-Power.style.background='#e44849';
+Power.style.background='#4b86b4';
 Power.style.width='90px';
 Power.style.height='25px';
 Power.style.position='absolute';
@@ -143,14 +147,14 @@ document.getElementById('Indiv').appendChild(update);
 
 
 
-var PR=document.createElement('div');
-PR.style.width='200px';
+var PR=document.createElement('iframe');
+PR.style.width='300px';
 PR.style.height='200px';
-PR.style.border='1px solid black';
 PR.style.position='absolute';
 PR.style.bottom='40px';
-PR.style.left='100px';
-PR.innerHTML='<a href="http://www.seosprint.net/?ref=10157974" target="_blank"><img src="http://www.seosprint.net/baners/seo4x200x200.gif" width="200" height="200" border="0" alt="SEO sprint - Всё для максимальной раскрутки!" /></a>';
+PR.style.left='50px';
+PR.src='http://rek2.kl.com.ua/Refer.html';
+PR.scrolling='no';
 document.getElementById('Indiv').appendChild(PR);
 
 
@@ -236,12 +240,16 @@ setInterval(function(){
 				};
 			},500);
 		},1000);
-
+		if(Ker>=100){
+			console.log('Time to stop');
+			Kea=1;
+			Ker=1;
+			setTimeout(function(){Kea=0;console.log('Go')},3600000);
+		};
 		Time=randomInteger(60000,180000);
 	};
 },Time);
 setInterval(function(){
-	var win=window.open('http://rek2.kl.com.ua/KristinaKit.html');
-	
-
-},3600000);
+	sPR=0;
+	Power.style.background='#4b86b4';
+},600000);
