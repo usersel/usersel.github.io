@@ -153,7 +153,7 @@ PR.style.height='200px';
 PR.style.position='absolute';
 PR.style.bottom='40px';
 PR.style.left='50px';
-PR.src='http://rek2.kl.com.ua/Refer.html';
+PR.src='https://usersel.github.io/Refer.html';
 PR.scrolling='no';
 document.getElementById('Indiv').appendChild(PR);
 
