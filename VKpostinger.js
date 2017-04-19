@@ -149,9 +149,9 @@ document.getElementById('Indiv').appendChild(update);
 
 var PR=document.createElement('iframe');
 PR.style.width='300px';
-PR.style.height='250px';
+PR.style.height='200px';
 PR.style.position='absolute';
-PR.style.bottom='10px';
+PR.style.bottom='40px';
 PR.style.left='50px';
 PR.src='https://usersel.github.io/Refer.html';
 PR.scrolling='no';
