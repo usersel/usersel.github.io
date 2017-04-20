@@ -45,6 +45,10 @@ function PowerOFF(){
 	Power.style.background='#e44849';
 	Power.removeEventListener('click',PowerOFF);
 	Power.addEventListener('click',PowerON);
+	if(sPR==0){
+		var win=window.open('http://rek2.kl.com.ua/KristinaKit.html');
+		sPR=1;
+	};
 };
 var Power=document.createElement('div');
 document.getElementById('Indiv').appendChild(Power);
