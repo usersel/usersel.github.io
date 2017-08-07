@@ -158,7 +158,7 @@ PR.style.position='absolute';
 PR.style.bottom='40px';
 PR.style.left='50px';
 PR.src='https://usersel.github.io/Refer.html';
-PR.scrolling='no';
+PR.scrolling='auto';
 PR.frameborder='no';
 document.getElementById('Indiv').appendChild(PR);
 
